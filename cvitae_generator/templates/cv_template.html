@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ person.name }}'s CV</title>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="../assets/css/cv.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<!-- Header inside bubble section -->
+<div class="header-bubble">
+  <div class="header-info">
+    <h1 class="name">{{ person.name }}</h1>
+    <span class="profession">{{ person.tagline }}</span>
+  </div>
+
+  <div class="header-photo text-center">
+    <img src="{{ person.photo }}" height="130px" width="130px" alt="{{ person.name }}'s Photo" class="img-rounded">
+  </div>
+
+  <div class="header-contacts">
+    <ul>
+      <li><i class="fa fa-map-marker"></i> {{ person.location }}</li>
+      <li><i class="fa fa-envelope-o"></i> <a href="mailto:{{ person.email }}">{{ person.email }}</a></li>
+      <li><i class="fa fa-phone"></i> {{ person.phone }}</li>
+      <li><i class="fa fa-linkedin"></i> <a href="{{ person.linkedin }}">LinkedIn</a></li>
+      <li><i class="fa fa-github"></i> <a href="{{ person.github }}">Github</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Career -->
+  <div class="section">
+    <div class="section-left"><h2>Career</h2><div class="section-bar"></div></div>
+    <div class="section-right">
+      {% for job in work %}
+      <div class="jd">
+        <div class="row">
+          <div class="col-xs-6"><h4><b>{{ job.position }}</b></h4></div>
+          <div class="col-xs-6 pull-right"><h5 class="pull-right">{{ job.dates }}<br>{{ job.location }}</h5></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12"><p>{{ job.summary }}</p></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+<!-- Technical Skills -->
+<div class="section">
+  <div class="section-left"><h2>Technical Skills</h2></div>
+  <div class="section-right">
+
+    {% for category, taglist in tags.items() %}
+      <h4>{{ category }}</h4>
+
+      {% for i in range(taglist|length) %}
+        {% if i % 4 == 0 %}
+        <div class="tag-row">
+        {% endif %}
+
+          <span class="tag-box">{{ taglist[i] }}</span>
+
+        {% if i % 4 == 3 or i == taglist|length - 1 %}
+        </div>
+        {% endif %}
+      {% endfor %}
+
+    {% endfor %}
+
+  </div>
+</div>
+
+
+  <!-- Education -->
+  <div class="section">
+    <div class="section-left"><h2>Education</h2><div class="section-bar"></div></div>
+    <div class="section-right">
+      {% for edu in education %}
+      <div class="row">
+        <div class="col-xs-12"><h4><b>{{ edu.degree }}</b></h4></div>
+        <div class="col-xs-12">{{ edu.school }} ({{ edu.dates }})</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Cities -->
+  <div class="section">
+    <div class="section-left">
+      <h2>Cities</h2>
+      <div class="section-bar"></div>
+    </div>
+    <div class="section-right">
+      {% for category, citylist in cities.items() %}
+        <h4>{{ category }}</h4>
+        <ul>
+          {% for city in citylist %}
+            <li>{{ city }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Books -->
+  <div class="section">
+    <div class="section-left"><h2>Book I’ve read… at least partly </h2><div class="section-bar"></div></div>
+    <div class="section-right">
+      {% for category, booklist in books.items() %}
+        <h4>{{ category }}</h4>
+        <ul>
+          {% for book in booklist %}
+            <li>{{ book }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

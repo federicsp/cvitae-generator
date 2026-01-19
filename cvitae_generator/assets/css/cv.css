@@ -1,0 +1,113 @@
+/* Bubble grande per i tag */
+.tag-container {
+    display: flex;                 /* flexbox */
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    border-radius: 16px;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* contenitore di ogni riga da 4 tag */
+.tag-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+
+/* singolo tag */
+.tag-box {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.85em;
+    text-align: center;
+    width: 23%;
+    box-sizing: border-box;
+}
+
+/* Titolo sottosezione */
+.section-right h4 {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Section bubble */
+.section {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Left part of section (titles) */
+.section-left {
+    flex: 0 0 25%;
+    position: relative;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+/* Right part of section (content) */
+.section-right {
+    flex: 1;
+}
+
+
+
+
+
+
+/* Header container: una riga */
+.header-bubble {
+    display: flex;                 /* layout orizzontale */
+    gap: 10px;                     /* spazio tra bubble */
+    margin-bottom: 20px;
+}
+
+/* Bubble FOTO */
+.header-photo {
+    flex: 0 0 25%;                 /* colonna fissa */
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.header-photo img {
+    border-radius: 50%;
+}
+
+/* Bubble PROFILO */
+.header-info {
+    flex: 1;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Bubble CONTATTI */
+.header-contacts {
+    flex: 0 0 30%;                 /* colonna destra */
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+/* Contatti */
+.header-contacts ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header-contacts li {
+    margin-bottom: 6px;
+}

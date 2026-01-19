@@ -1,0 +1,181 @@
+person:
+  name: "Federico Spatola"
+  tagline: "Born in Palermo, moved to Trieste for higher education. Nowadays one of the things I like the most is to spend my time (both at work and for fun) developing Python applications and managing data"
+  photo: "../assets/images/picture.jpg"
+  location: "Palermo, Italy"
+  linkedin: "https://it.linkedin.com/in/federico-spatola"
+  github: "https://github.com/federicsp"
+
+skills:
+  Programming Languages:
+    - "Python: started in 2017"
+  Version Control:
+    - "Git: started in 2020"
+  Project Management:
+    - "Jira+Confluence: started in 2021"
+
+work:
+  - position: "Python Developer / Data Engineer (Immobiliare.it SPA)"
+    location: "Palermo-remote"
+    dates: "19/04/2021–now"
+    summary: "Contributing to ETL services, REST APIs, SQL & NoSQL databases, containerization, application deployment."
+  - position: "Full stack developer (Xpand Group LTD)"
+    location: "Belfast-remote"
+    dates: "02/11/2020–02/02/2021"
+    summary: "Created web-scraping scripts in Python to extract data from various sources."
+
+tags:
+  "Data Engineering":
+    - "Data Engineering"
+    - "Data Pipeline"
+    - "Data Transformation"
+    - "Data Source e Serving"
+
+    - "Data Governance"
+    - "Data Platform"
+    - "D. Platform Governance"
+    - "D. Platform Examples"
+
+    - "Distributed Computing"
+    - "Apache Spark Architecture"
+    - "Apache Spark"
+    - "Apache Spark Extensions"
+
+    - "ELT"
+    - "Brokers Messages"
+    - "Workflows"
+    - "Apache Airflow"
+
+    - "Data Storage"
+    - "Table Format"
+    - "Database"
+    - " "
+
+    - "SQL Constructs"
+    - "SQL Clauses"
+    - "SQL Functions"
+    - "SQL Wildcards&Operators"
+
+  "Software":
+    - "Software"
+    - "Encoding"
+    - "Encryption / Hash"
+    - "Data Structures"
+
+    - "Hardware Elements"
+    - "Hardware Configuration"
+    - "Observability"
+    - ""
+
+    - "Operating System"
+    - "OS in Cloud"
+    - "Containers"
+    - "Container Orchestration"
+
+    - "Processes"
+    - "Memory"
+    - "Async Code"
+    - ""
+
+  "Web & Networking":
+    - "Networks"
+    - "VPC"
+    - "Network Security"
+    - ""
+
+    - "HTTP and Web"
+    - "TCP-IP Model: levels 5,6,7"
+    - "TCP-IP Model: levels 3,4"
+    - "TCP-IP Model: levels  1,2"
+
+    - "Web Server"
+    - "Web Proxies"
+    - "Web DNS Server"
+    - ""
+
+    - "Backend"
+    - "Backend Elements"
+    - "Web API"
+    - ""
+
+  "Software Design":
+    - "Design"
+    - "Design Disaster Recovery"
+    - "Design Testing"
+    - ""
+
+    - "Easy Algorithms"
+    - "Array Algorithms"
+    - "Tree Algorithms"
+    - "Complexity"
+
+  "Agile And Git":
+    - "Agile"
+    - "Agile Alternatives"
+    - "Agile Tools"
+    - ""
+
+    - "Git"
+    - "Git Tools"
+    - "GitLab Hosting"
+    - "GitLab CI"
+
+  "Python":
+    - "Python"
+    - "Python Execution"
+    - "Python Classes"
+    - ""
+
+    - "Python UV"
+    - "Python Build"
+    - ""
+    - ""
+
+
+education:
+  - degree: "Master in Statistical and Actuarial sciences"
+    school: "University of Trieste, Trieste"
+    dates: "09/2018 - 03/2021"
+  - degree: "Erasmus+ for study"
+    school: "University of Ljubljana, Ljubljana"
+    dates: "02/2020 - 07/2020"
+  - degree: "Bachelor in Mathematics"
+    school: "University of Trieste, Trieste"
+    dates: "09/2014 - 07/2018"
+  - degree: "Scientific maturity"
+    school: "Liceo scientifico Galilei, Palermo"
+    dates: "09/2009 - 07/2014"
+
+cities:
+  "Where I have lived":
+  - "Palermo >20 years"
+  - "Trieste ~6 years"
+  - "London Derry ~1 month"
+  - "Copenhagen ~1 month"
+  - "Ljubljana ~2 months"
+
+books:
+  "Data Engineering":
+    - "Fundamentals of Data Engineering - Joe Reis, Matt Housley - edition 2022"
+    - "Data Pipelines with Apache Airflow - Bas Harenslak, Julian de Ruiter - edition 2021"
+    - "Python and Snowflake with Snowpark - Snowflake Inc. - edition 2021"
+    - "Designing Data-Intensive Applications - Martin Kleppmann - edition 2017"
+    - "Streaming Systems - Tyler Akidau, Slava Chernyak, Reuven Lax - edition 2018"
+    - "MySQL Architecture - Lenz Grimmer, Jeremy D. Zawodny - edition 2005"
+    - "MongoDB The Definitive Guide - Shannon Bradshaw, Eoin Brazil, Kristina Chodorow - edition 2019"
+  "Python Development":
+    - "Python Testing with Pytest - Brian Okken - edition 2017"
+    - "FastAPI: Modern Python Web Development - Bill Lubanovic - edition 2023"
+    - "Python Cookbook - David Beazley, Brian K. Jones - edition 2013"
+    - "Effective Python - Brett Slatkin - edition 2020"
+    - "Fluent Python - Luciano Ramalho - edition 2022"
+  "Software":
+    - "Version Control with Git - Jon Loeliger, Matthew McCullough - edition 2012"
+    - "Clean Code Principles and Patterns: A Software Practitioner's Handbook - Robert C. Martin - edition 2008"
+    - "Linux Administrators Handbook - Evi Nemeth, Garth Snyder, Trent R. Hein - edition 2018"
+    - "Docker: Up & Running - Sean P. Kane, Karl Matthias - edition 2023"
+    - "Terraform: Up & Running - Yevgeniy Brikman - edition 2019"
+    - "Kubernetes Up & Running - Brendan Burns, Joe Beda, Kelsey Hightower - edition 2022"
+  "Web":
+    - "The Road to GraphQL - Robin Wieruch - edition 2019"
+    - "Microservice Architecture - Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, Mike Amundsen - edition 2016"
