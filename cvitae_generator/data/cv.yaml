@@ -26,35 +26,55 @@ work:
 
 tags:
   "Data Engineering":
-    - "Data Engineering"
     - "Data Pipeline"
     - "Data Transformation"
-    - "Data Source e Serving"
+    - "Data Source & Serving"
+    - "--"
 
     - "Data Governance"
+    - "Data Governance Tools"
+    - "Data Platform Governance"
+    - "Operational vs Analytics"
+
     - "Data Platform"
-    - "D. Platform Governance"
-    - "D. Platform Examples"
+    - "Platform Examples"
+    - "Spark Cloud"
+    - "--"
 
     - "Distributed Computing"
-    - "Apache Spark Architecture"
+    - "Spark Architecture"
     - "Apache Spark"
-    - "Apache Spark Extensions"
+    - "Spark Extensions"
 
     - "ELT"
+    - "DBT"
     - "Brokers Messages"
+    - "--"
+
     - "Workflows"
-    - "Apache Airflow"
+    - "Airflow"
+    - "Airflow Architecture"
+    - "--"
 
     - "Data Storage"
+    - "Data Storage Abstraction"
+    - "Storage Objects"
+    - "In-Memory Storage"
+
     - "Table Format"
+    - "File Table Properties"
+    - "Iceberg"
+    - "Iceberg Architecture"
+
     - "Database"
-    - " "
+    - "Database Specialized"
+    - "DB Optimization"
+    - "DB Transaction"
 
     - "SQL Constructs"
     - "SQL Clauses"
     - "SQL Functions"
-    - "SQL Wildcards&Operators"
+    - "SQL Operators & Wildcards"
 
   "Software":
     - "Software"
@@ -64,56 +84,56 @@ tags:
 
     - "Hardware Elements"
     - "Hardware Configuration"
+    - "Hardware Provisioning"
     - "Observability"
-    - ""
+
+    - "Processes"
+    - "Multiprocessing"
+    - "Memory"
+    - "Async Code"
 
     - "Operating System"
     - "OS in Cloud"
     - "Containers"
     - "Container Orchestration"
 
-    - "Processes"
-    - "Memory"
-    - "Async Code"
-    - ""
-
   "Web & Networking":
     - "Networks"
     - "VPC"
     - "Network Security"
-    - ""
+    - "--"
 
-    - "HTTP and Web"
+    - "HTTP & Web"
     - "TCP-IP Model: levels 5,6,7"
     - "TCP-IP Model: levels 3,4"
-    - "TCP-IP Model: levels  1,2"
+    - "TCP-IP Model: levels 1,2"
 
     - "Web Server"
     - "Web Proxies"
     - "Web DNS Server"
-    - ""
+    - "Web Stack"
 
     - "Backend"
     - "Backend Elements"
     - "Web API"
-    - ""
+    - "--"
 
   "Software Design":
     - "Design"
     - "Design Disaster Recovery"
     - "Design Testing"
-    - ""
+    - "--"
 
     - "Easy Algorithms"
     - "Array Algorithms"
     - "Tree Algorithms"
     - "Complexity"
 
-  "Agile And Git":
+  "Agile & Git":
     - "Agile"
     - "Agile Alternatives"
     - "Agile Tools"
-    - ""
+    - "--"
 
     - "Git"
     - "Git Tools"
@@ -121,15 +141,26 @@ tags:
     - "GitLab CI"
 
   "Python":
-    - "Python"
+    - "Python Basics"
     - "Python Execution"
     - "Python Classes"
-    - ""
+    - "Python Data Structures"
 
     - "Python UV"
     - "Python Build"
-    - ""
-    - ""
+    - "--"
+    - "--"
+
+    - "Python Data Processing"
+    - "Polars Library"
+    - "Data Science"
+    - "Generative AI"
+
+  "Linux":
+    - "Linux"
+    - "Linux Daemons"
+    - "--"
+    - "--"
 
 
 education:
@@ -163,19 +194,33 @@ books:
     - "Streaming Systems - Tyler Akidau, Slava Chernyak, Reuven Lax - edition 2018"
     - "MySQL Architecture - Lenz Grimmer, Jeremy D. Zawodny - edition 2005"
     - "MongoDB The Definitive Guide - Shannon Bradshaw, Eoin Brazil, Kristina Chodorow - edition 2019"
+    - "Data Mesh: Delivering Data-Driven Value at Scale - Zhamak Dehghani - edition 2022"
+    - "Apache Spark: The Definitive Guide - Bill Chambers, Matei Zaharia - edition 2018"
+    - "Kafka: The Definitive Guide - Neha Narkhede, Gwen Shapira, Todd Palino - edition 2017"
+    - "Iceberg: The Definitive Guide - - edition 2023"
+    - "High Performance MySQL - Silvia Botros, Jeremy D. Zawodny - edition 2012"
+
   "Python Development":
     - "Python Testing with Pytest - Brian Okken - edition 2017"
-    - "FastAPI: Modern Python Web Development - Bill Lubanovic - edition 2023"
     - "Python Cookbook - David Beazley, Brian K. Jones - edition 2013"
     - "Effective Python - Brett Slatkin - edition 2020"
     - "Fluent Python - Luciano Ramalho - edition 2022"
+
   "Software":
     - "Version Control with Git - Jon Loeliger, Matthew McCullough - edition 2012"
     - "Clean Code Principles and Patterns: A Software Practitioner's Handbook - Robert C. Martin - edition 2008"
     - "Linux Administrators Handbook - Evi Nemeth, Garth Snyder, Trent R. Hein - edition 2018"
     - "Docker: Up & Running - Sean P. Kane, Karl Matthias - edition 2023"
     - "Terraform: Up & Running - Yevgeniy Brikman - edition 2019"
+    - "Kubernetes in Action - Marko Luksa - edition 2018"
     - "Kubernetes Up & Running - Brendan Burns, Joe Beda, Kelsey Hightower - edition 2022"
+    - "Telemetry and Observability for Engineers - - edition 2021"
+    - "Observability Engineering - edition 2021"
+
   "Web":
     - "The Road to GraphQL - Robin Wieruch - edition 2019"
+    - "FastAPI: Modern Python Web Development - Bill Lubanovic - edition 2023"
+
+  "Design Patterns":
+    - "Design Patterns: Elements of Reusable Object-Oriented Software - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides - edition 1994"
     - "Microservice Architecture - Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, Mike Amundsen - edition 2016"
