@@ -51,30 +51,43 @@
     </div>
   </div>
 
+
 <!-- Technical Skills -->
 <div class="section">
   <div class="section-left"><h2>Technical Skills</h2></div>
   <div class="section-right">
 
-    {% for category, taglist in tags.items() %}
-      <h4>{{ category }}</h4>
-
-      {% for i in range(taglist|length) %}
-        {% if i % 4 == 0 %}
-        <div class="tag-row">
-        {% endif %}
-
-          <span class="tag-box">{{ taglist[i] }}</span>
-
-        {% if i % 4 == 3 or i == taglist|length - 1 %}
-        </div>
-        {% endif %}
+    <!-- Bottoni per macro sezioni -->
+    <div class="tag-buttons" style="margin-bottom:10px;">
+      {% for macro, categories in tags.items() %}
+        <button class="btn btn-primary btn-xs" onclick="showMacro('{{ macro|replace(' ', '_') }}')">{{ macro }}</button>
       {% endfor %}
+    </div>
 
+    {% for macro, categories in tags.items() %}
+      <div class="macro-section" id="{{ macro|replace(' ', '_') }}" style="display:none; margin-top:10px;">
+        {% for category, taglist in categories.items() %}
+          <h4>{{ category }}</h4>
+          {% for i in range(taglist|length) %}
+            {% if i % 4 == 0 %}<div class="tag-row">{% endif %}
+              <span class="tag-box">{{ taglist[i] }}</span>
+            {% if i % 4 == 3 or i == taglist|length - 1 %}</div>{% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
     {% endfor %}
 
   </div>
 </div>
+
+<script>
+function showMacro(id) {
+  const sections = document.querySelectorAll('.macro-section');
+  sections.forEach(s => s.style.display = 'none');       // nascondi tutte
+  const active = document.getElementById(id);
+  if(active) active.style.display = 'block';             // mostra quella cliccata
+}
+</script>
 
 
   <!-- Education -->

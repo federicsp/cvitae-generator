@@ -15,7 +15,7 @@
 <div class="header-bubble">
   <div class="header-info">
     <h1 class="name">Federico Spatola</h1>
-    <span class="profession">Born in Palermo, moved to Trieste for higher education. Nowadays one of the things I like the most is to spend my time (both at work and for fun) developing Python applications and managing data</span>
+    <span class="profession"></span>
   </div>
 
   <div class="header-photo text-center">
@@ -61,778 +61,2443 @@
     </div>
   </div>
 
+
 <!-- Technical Skills -->
 <div class="section">
   <div class="section-left"><h2>Technical Skills</h2></div>
   <div class="section-right">
 
-    
-      <h4>Data Engineering</h4>
-
+    <!-- Bottoni per macro sezioni -->
+    <div class="tag-buttons" style="margin-bottom:10px;">
       
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Data Pipeline</span>
-
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Data_Engineering')">Data Engineering</button>
       
-        
-
-          <span class="tag-box">Data Transformation</span>
-
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Storage')">Storage</button>
       
-        
-
-          <span class="tag-box">Data Source & Serving</span>
-
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Software')">Software</button>
       
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Python')">Python</button>
       
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Data Governance</span>
-
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Web_&_Networking')">Web & Networking</button>
       
-        
-
-          <span class="tag-box">Data Governance Tools</span>
-
-        
+        <button class="btn btn-primary btn-xs" onclick="showMacro('Dev_Practices')">Dev Practices</button>
       
-        
-
-          <span class="tag-box">Data Platform Governance</span>
-
-        
-      
-        
-
-          <span class="tag-box">Operational vs Analytics</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Data Platform</span>
-
-        
-      
-        
-
-          <span class="tag-box">Platform Examples</span>
-
-        
-      
-        
-
-          <span class="tag-box">Spark Cloud</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Distributed Computing</span>
-
-        
-      
-        
-
-          <span class="tag-box">Spark Architecture</span>
-
-        
-      
-        
-
-          <span class="tag-box">Apache Spark</span>
-
-        
-      
-        
-
-          <span class="tag-box">Spark Extensions</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">ELT</span>
-
-        
-      
-        
-
-          <span class="tag-box">DBT</span>
-
-        
-      
-        
-
-          <span class="tag-box">Brokers Messages</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Workflows</span>
-
-        
-      
-        
-
-          <span class="tag-box">Airflow</span>
-
-        
-      
-        
-
-          <span class="tag-box">Airflow Architecture</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Data Storage</span>
-
-        
-      
-        
-
-          <span class="tag-box">Data Storage Abstraction</span>
-
-        
-      
-        
-
-          <span class="tag-box">Storage Objects</span>
-
-        
-      
-        
-
-          <span class="tag-box">In-Memory Storage</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Table Format</span>
-
-        
-      
-        
-
-          <span class="tag-box">File Table Properties</span>
-
-        
-      
-        
-
-          <span class="tag-box">Iceberg</span>
-
-        
-      
-        
-
-          <span class="tag-box">Iceberg Architecture</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Database</span>
-
-        
-      
-        
-
-          <span class="tag-box">Database Specialized</span>
-
-        
-      
-        
-
-          <span class="tag-box">DB Optimization</span>
-
-        
-      
-        
-
-          <span class="tag-box">DB Transaction</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">SQL Constructs</span>
-
-        
-      
-        
-
-          <span class="tag-box">SQL Clauses</span>
-
-        
-      
-        
-
-          <span class="tag-box">SQL Functions</span>
-
-        
-      
-        
-
-          <span class="tag-box">SQL Operators & Wildcards</span>
-
-        
-        </div>
-        
-      
+    </div>
 
     
-      <h4>Software</h4>
-
-      
+      <div class="macro-section" id="Data_Engineering" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Pipelines & Transformation</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Pipeline</span>
+            
+          
+            
+              <span class="tag-box">Data Ingestion</span>
+            
+          
+            
+              <span class="tag-box">Data Source & Serving</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Pipeline Transformation</span>
+            
+          
+            
+              <span class="tag-box">Data Modeling</span>
+            
+          
+            
+              <span class="tag-box">Pydantic</span>
+            
+          
+            
+              <span class="tag-box">Data Enrichment</span>
+            </div>
+          
         
-
-          <span class="tag-box">Software</span>
-
+          <h4>Distributed Compute</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Distributed Computing</span>
+            
+          
+            
+              <span class="tag-box">Distributed In Memory</span>
+            
+          
+            
+              <span class="tag-box">Distributed Streaming</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Spark In Memory</span>
+            
+          
+            
+              <span class="tag-box">Spark Dependencies</span>
+            
+          
+            
+              <span class="tag-box">Spark Deployment</span>
+            
+          
+            
+              <span class="tag-box">Spark Execution</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Spark Architecture</span>
+            
+          
+            
+              <span class="tag-box">Spark Cluster</span>
+            
+          
+            
+              <span class="tag-box">Spark Config</span>
+            
+          
+            
+              <span class="tag-box">Catalyst Optimizer</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Spark Connect</span>
+            
+          
+            
+              <span class="tag-box">Spark RPC</span>
+            
+          
+            
+              <span class="tag-box">Spark Libraries</span>
+            
+          
+            
+              <span class="tag-box">Structured APIs</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Partitioning</span>
+            
+          
+            
+              <span class="tag-box">Partition By</span>
+            
+          
+            
+              <span class="tag-box">Shuffle</span>
+            
+          
+            
+              <span class="tag-box">Partition Skew</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Salting</span>
+            
+          
+            
+              <span class="tag-box">Broadcast Join</span>
+            
+          
+            
+              <span class="tag-box">Map Side Aggregation</span>
+            
+          
+            
+              <span class="tag-box">Dynamic Allocation</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">RDD</span>
+            
+          
+            
+              <span class="tag-box">RDD Operations</span>
+            
+          
+            
+              <span class="tag-box">RDD Transformations</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">DataFrame</span>
+            
+          
+            
+              <span class="tag-box">DataFrame Operations</span>
+            
+          
+            
+              <span class="tag-box">Spark SQL</span>
+            
+          
+            
+              <span class="tag-box">Spark JDBC</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Iceberg + Spark Sessions</span>
+            
+          
+            
+              <span class="tag-box">Iceberg DDL with Spark</span>
+            
+          
+            
+              <span class="tag-box">Iceberg Procedures</span>
+            
+          
+            
+              <span class="tag-box">Iceberg Snapshots DQL</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Iceberg Branch</span>
+            
+          
+            
+              <span class="tag-box">Iceberg Tag</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-      
+          <h4>Data Libraries</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Processing Libraries</span>
+            
+          
+            
+              <span class="tag-box">Polars</span>
+            
+          
+            
+              <span class="tag-box">DataFrame</span>
+            
+          
+            
+              <span class="tag-box">Jupyter Notebook</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Science</span>
+            
+          
+            
+              <span class="tag-box">Model Building</span>
+            
+          
+            
+              <span class="tag-box">Regression Models</span>
+            
+          
+            
+              <span class="tag-box">Generative AI</span>
+            </div>
+          
         
-
-          <span class="tag-box">Encoding</span>
-
+          <h4>Brokers</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Message Broker</span>
+            
+          
+            
+              <span class="tag-box">Pub Sub Model</span>
+            
+          
+            
+              <span class="tag-box">Event Driven Design</span>
+            
+          
+            
+              <span class="tag-box">Dead Lettering</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">RabbitMQ</span>
+            
+          
+            
+              <span class="tag-box">Exchange</span>
+            
+          
+            
+              <span class="tag-box">Queue</span>
+            
+          
+            
+              <span class="tag-box">Pika</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Kafka</span>
+            
+          
+            
+              <span class="tag-box">Kafka Events</span>
+            
+          
+            
+              <span class="tag-box">Kafka Topics</span>
+            
+          
+            
+              <span class="tag-box">Kafka Topic List</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Kafka Architecture</span>
+            
+          
+            
+              <span class="tag-box">Kafka Connect</span>
+            
+          
+            
+              <span class="tag-box">Kafka Streams API</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-      
+          <h4>Workflows</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Workflows</span>
+            
+          
+            
+              <span class="tag-box">Workflow States</span>
+            
+          
+            
+              <span class="tag-box">Workflow Infrastructure</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Airflow</span>
+            
+          
+            
+              <span class="tag-box">Airflow Architecture</span>
+            
+          
+            
+              <span class="tag-box">Scheduler</span>
+            
+          
+            
+              <span class="tag-box">Metadata DB</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Connections</span>
+            
+          
+            
+              <span class="tag-box">Variables</span>
+            
+          
+            
+              <span class="tag-box">DAGs</span>
+            
+          
+            
+              <span class="tag-box">TaskFlow API</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Sensors</span>
+            
+          
+            
+              <span class="tag-box">Assets</span>
+            
+          
+            
+              <span class="tag-box">Operators</span>
+            
+          
+            
+              <span class="tag-box">SSH Operator</span>
+            </div>
+          
         
-
-          <span class="tag-box">Encryption / Hash</span>
-
+          <h4>ELT Tools</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">ELT Tools</span>
+            
+          
+            
+              <span class="tag-box">Materialization Types</span>
+            
+          
+            
+              <span class="tag-box">SQLMesh</span>
+            
+          
+            
+              <span class="tag-box">DBT</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">DBT YAML Files</span>
+            
+          
+            
+              <span class="tag-box">DBT Run</span>
+            
+          
+            
+              <span class="tag-box">DBT Snapshot</span>
+            
+          
+            
+              <span class="tag-box">DBT Models</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">DBT Macros</span>
+            
+          
+            
+              <span class="tag-box">DBT Project Structure</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-      
+          <h4>Governance & Quality</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Governance</span>
+            
+          
+            
+              <span class="tag-box">Compliance</span>
+            
+          
+            
+              <span class="tag-box">Privacy</span>
+            
+          
+            
+              <span class="tag-box">Data Contracts</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Profiling</span>
+            
+          
+            
+              <span class="tag-box">Data Lineage</span>
+            
+          
+            
+              <span class="tag-box">OpenLineage</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Quality</span>
+            
+          
+            
+              <span class="tag-box">Quality Checks</span>
+            
+          
+            
+              <span class="tag-box">Validation Rules</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Great Expectations</span>
+            
+          
+            
+              <span class="tag-box">Expectations</span>
+            
+          
+            
+              <span class="tag-box">Validation Results</span>
+            
+          
+            
+              <span class="tag-box">Data Docs</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">DBT Tests</span>
+            
+          
+            
+              <span class="tag-box">DBT Test Command</span>
+            
+          
+            
+              <span class="tag-box">DBT Target Folder</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">Data Structures</span>
-
+          <h4>Catalog & Metadata</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Catalog</span>
+            
+          
+            
+              <span class="tag-box">OpenMetadata</span>
+            
+          
+            
+              <span class="tag-box">Data Discovery</span>
+            
+          
+            
+              <span class="tag-box">DataHub</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">DataHub Architecture</span>
+            
+          
+            
+              <span class="tag-box">GMS</span>
+            
+          
+            
+              <span class="tag-box">Metadata Graph</span>
+            
+          
+            
+              <span class="tag-box">GraphQL API</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Entities</span>
+            
+          
+            
+              <span class="tag-box">Assets</span>
+            
+          
+            
+              <span class="tag-box">Aspects</span>
+            
+          
+            
+              <span class="tag-box">Relationships</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Domains</span>
+            
+          
+            
+              <span class="tag-box">Tags</span>
+            
+          
+            
+              <span class="tag-box">Structured Properties</span>
+            
+          
+            
+              <span class="tag-box">Sources</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Lineage</span>
+            
+          
+            
+              <span class="tag-box">Incidents</span>
+            
+          
+            
+              <span class="tag-box">Contracts</span>
+            
+          
+            
+              <span class="tag-box">Assertions</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">URN</span>
+            
+          
+            
+              <span class="tag-box">URN User</span>
+            
+          
+            
+              <span class="tag-box">URN Columns</span>
+            
+          
+            
+              <span class="tag-box">MCP DataHub</span>
+            </div>
+          
         
-        </div>
+          <h4>Data Platform</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Platform</span>
+            
+          
+            
+              <span class="tag-box">Data Warehouse</span>
+            
+          
+            
+              <span class="tag-box">Data Lake</span>
+            
+          
+            
+              <span class="tag-box">Data Lakehouse</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Mesh</span>
+            
+          
+            
+              <span class="tag-box">Domain Ownership</span>
+            
+          
+            
+              <span class="tag-box">Self Serve Data Platform</span>
+            
+          
+            
+              <span class="tag-box">Federated Governance</span>
+            </div>
+          
         
-      
+          <h4>Google Cloud</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Google Cloud</span>
+            
+          
+            
+              <span class="tag-box">Projects</span>
+            
+          
+            
+              <span class="tag-box">Regions</span>
+            
+          
+            
+              <span class="tag-box">Locations</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">IAM</span>
+            
+          
+            
+              <span class="tag-box">OAuth2</span>
+            
+          
+            
+              <span class="tag-box">Service Accounts</span>
+            
+          
+            
+              <span class="tag-box">Workload Identity Federation</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Scopes</span>
+            
+          
+            
+              <span class="tag-box">Roles</span>
+            
+          
+            
+              <span class="tag-box">gcloud CLI</span>
+            
+          
+            
+              <span class="tag-box">Cloud Storage</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">BigQuery</span>
+            
+          
+            
+              <span class="tag-box">Analytics Hub</span>
+            
+          
+            
+              <span class="tag-box">External Tables</span>
+            
+          
+            
+              <span class="tag-box">Federated Queries</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">BigLake</span>
+            
+          
+            
+              <span class="tag-box">BigLake Storage</span>
+            
+          
+            
+              <span class="tag-box">BigLake API</span>
+            
+          
+            
+              <span class="tag-box">BigLake Limitations</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Dataproc</span>
+            
+          
+            
+              <span class="tag-box">Dataproc Cluster</span>
+            
+          
+            
+              <span class="tag-box">Dataproc Serverless</span>
+            
+          
+            
+              <span class="tag-box">Databricks</span>
+            </div>
+          
         
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Hardware Elements</span>
-
-        
-      
-        
-
-          <span class="tag-box">Hardware Configuration</span>
-
-        
-      
-        
-
-          <span class="tag-box">Hardware Provisioning</span>
-
-        
-      
-        
-
-          <span class="tag-box">Observability</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Processes</span>
-
-        
-      
-        
-
-          <span class="tag-box">Multiprocessing</span>
-
-        
-      
-        
-
-          <span class="tag-box">Memory</span>
-
-        
-      
-        
-
-          <span class="tag-box">Async Code</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Operating System</span>
-
-        
-      
-        
-
-          <span class="tag-box">OS in Cloud</span>
-
-        
-      
-        
-
-          <span class="tag-box">Containers</span>
-
-        
-      
-        
-
-          <span class="tag-box">Container Orchestration</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
-      <h4>Web & Networking</h4>
-
-      
+      <div class="macro-section" id="Storage" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Storage Systems</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Storage</span>
+            
+          
+            
+              <span class="tag-box">Compression</span>
+            
+          
+            
+              <span class="tag-box">Partitioning</span>
+            
+          
+            
+              <span class="tag-box">In Memory Storage</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Storage Abstraction</span>
+            
+          
+            
+              <span class="tag-box">Block Storage</span>
+            
+          
+            
+              <span class="tag-box">File Storage</span>
+            
+          
+            
+              <span class="tag-box">Object Storage</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Distributed Storage</span>
+            
+          
+            
+              <span class="tag-box">CAP Theorem</span>
+            
+          
+            
+              <span class="tag-box">Backups</span>
+            
+          
+            
+              <span class="tag-box">Medallion Architecture</span>
+            </div>
+          
         
-
-          <span class="tag-box">Networks</span>
-
+          <h4>Table Formats</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Table Formats</span>
+            
+          
+            
+              <span class="tag-box">Table Properties</span>
+            
+          
+            
+              <span class="tag-box">Apache Iceberg</span>
+            
+          
+            
+              <span class="tag-box">Iceberg Architecture</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Iceberg Versions</span>
+            
+          
+            
+              <span class="tag-box">Compaction</span>
+            
+          
+            
+              <span class="tag-box">Schema Evolution</span>
+            
+          
+            
+              <span class="tag-box">Delete / Update</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Iceberg Catalog</span>
+            
+          
+            
+              <span class="tag-box">Catalog Engines</span>
+            
+          
+            
+              <span class="tag-box">Migration</span>
+            
+          
+            
+              <span class="tag-box">PyIceberg</span>
+            </div>
+          
         
-      
+          <h4>Databases</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Database</span>
+            
+          
+            
+              <span class="tag-box">CRUD</span>
+            
+          
+            
+              <span class="tag-box">MySQL</span>
+            
+          
+            
+              <span class="tag-box">MySQL Architecture</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">MongoDB</span>
+            
+          
+            
+              <span class="tag-box">MongoDB Architecture</span>
+            
+          
+            
+              <span class="tag-box">ClickHouse</span>
+            
+          
+            
+              <span class="tag-box">DuckDB</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Spatial Databases</span>
+            
+          
+            
+              <span class="tag-box">Vector Databases</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Connection Pool</span>
+            
+          
+            
+              <span class="tag-box">ORM</span>
+            
+          
+            
+              <span class="tag-box">ACID Transactions</span>
+            
+          
+            
+              <span class="tag-box">DB Oplog</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Query Plan</span>
+            
+          
+            
+              <span class="tag-box">Schema Optimization</span>
+            
+          
+            
+              <span class="tag-box">Index Optimization</span>
+            
+          
+            
+              <span class="tag-box">Views</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Stored Procedures</span>
+            
+          
+            
+              <span class="tag-box">Triggers</span>
+            
+          
+            
+              <span class="tag-box">Events</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">VPC</span>
-
+          <h4>SQL</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">SQL DQL</span>
+            
+          
+            
+              <span class="tag-box">DML</span>
+            
+          
+            
+              <span class="tag-box">DISTINCT</span>
+            
+          
+            
+              <span class="tag-box">EXISTS</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">UNION</span>
+            
+          
+            
+              <span class="tag-box">GROUP BY</span>
+            
+          
+            
+              <span class="tag-box">HAVING</span>
+            
+          
+            
+              <span class="tag-box">ORDER BY</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Subqueries</span>
+            
+          
+            
+              <span class="tag-box">Correlated Subqueries</span>
+            
+          
+            
+              <span class="tag-box">Subquery in HAVING</span>
+            
+          
+            
+              <span class="tag-box">CTE</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">SQL Join</span>
+            
+          
+            
+              <span class="tag-box">Left Join</span>
+            
+          
+            
+              <span class="tag-box">Multiple Join</span>
+            
+          
+            
+              <span class="tag-box">Join Between</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">CASE</span>
+            
+          
+            
+              <span class="tag-box">COALESCE</span>
+            
+          
+            
+              <span class="tag-box">Window Functions</span>
+            
+          
+            
+              <span class="tag-box">Row Number</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Dense Rank</span>
+            
+          
+            
+              <span class="tag-box">Lag Lead</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">SUBSTR</span>
+            
+          
+            
+              <span class="tag-box">LENGTH</span>
+            
+          
+            
+              <span class="tag-box">GROUP CONCAT</span>
+            
+          
+            
+              <span class="tag-box">LIKE / REGEX</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">ROUND</span>
+            
+          
+            
+              <span class="tag-box">ARRAY AGG</span>
+            
+          
+            
+              <span class="tag-box">ANY / ALL</span>
+            
+          
+            
+              <span class="tag-box">CONCAT</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">TO_CHAR</span>
+            
+          
+            
+              <span class="tag-box">YEAR</span>
+            
+          
+            
+              <span class="tag-box">DATEDIFF</span>
+            
+          
+            
+              <span class="tag-box">NOW</span>
+            </div>
+          
         
-      
+          <h4>MQL</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">MQL</span>
+            
+          
+            
+              <span class="tag-box">MQL DML</span>
+            
+          
+            
+              <span class="tag-box">Aggregation</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Stage Match</span>
+            
+          
+            
+              <span class="tag-box">Stage Project</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">Network Security</span>
-
+          <h4>DDL</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">DDL</span>
+            
+          
+            
+              <span class="tag-box">DB Diagrams</span>
+            
+          
+            
+              <span class="tag-box">Normal Forms</span>
+            
+          
+            
+              <span class="tag-box">Netflix Schema Examples</span>
+            </div>
+          
         
-      
+          <h4>Search Engines</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Indexing Engines</span>
+            
+          
+            
+              <span class="tag-box">OpenSearch</span>
+            
+          
+            
+              <span class="tag-box">Search Indices</span>
+            
+          
+            
+              <span class="tag-box">REST APIs</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Search UI</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">HTTP & Web</span>
-
-        
-      
-        
-
-          <span class="tag-box">TCP-IP Model: levels 5,6,7</span>
-
-        
-      
-        
-
-          <span class="tag-box">TCP-IP Model: levels 3,4</span>
-
-        
-      
-        
-
-          <span class="tag-box">TCP-IP Model: levels 1,2</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Web Server</span>
-
-        
-      
-        
-
-          <span class="tag-box">Web Proxies</span>
-
-        
-      
-        
-
-          <span class="tag-box">Web DNS Server</span>
-
-        
-      
-        
-
-          <span class="tag-box">Web Stack</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Backend</span>
-
-        
-      
-        
-
-          <span class="tag-box">Backend Elements</span>
-
-        
-      
-        
-
-          <span class="tag-box">Web API</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
-      <h4>Software Design</h4>
-
-      
+      <div class="macro-section" id="Software" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Software Basics</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Software Types</span>
+            
+          
+            
+              <span class="tag-box">Encoding</span>
+            
+          
+            
+              <span class="tag-box">Encryption</span>
+            
+          
+            
+              <span class="tag-box">Hashing</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Environment Variables</span>
+            
+          
+            
+              <span class="tag-box">Binary Representation</span>
+            
+          
+            
+              <span class="tag-box">Tokens</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">Design</span>
-
+          <h4>Hardware & Infra</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Hardware Elements</span>
+            
+          
+            
+              <span class="tag-box">CPU</span>
+            
+          
+            
+              <span class="tag-box">RAM</span>
+            
+          
+            
+              <span class="tag-box">HDD</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Provisioning</span>
+            
+          
+            
+              <span class="tag-box">Terraform</span>
+            
+          
+            
+              <span class="tag-box">Terraform Modules</span>
+            
+          
+            
+              <span class="tag-box">Terraform State</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Infrastructure as Code</span>
+            
+          
+            
+              <span class="tag-box">Cloud IaaS</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Observability</span>
+            
+          
+            
+              <span class="tag-box">Observability Driven Design</span>
+            
+          
+            
+              <span class="tag-box">Zabbix</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-      
+          <h4>Software Design</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Design</span>
+            
+          
+            
+              <span class="tag-box">Disaster Recovery</span>
+            
+          
+            
+              <span class="tag-box">Layered Architecture</span>
+            
+          
+            
+              <span class="tag-box">Testing</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Pytest</span>
+            
+          
+            
+              <span class="tag-box">Fixtures</span>
+            
+          
+            
+              <span class="tag-box">Plugins</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">Design Disaster Recovery</span>
-
+          <h4>Data Structures & Algorithms</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Structures</span>
+            
+          
+            
+              <span class="tag-box">Stack</span>
+            
+          
+            
+              <span class="tag-box">Queue</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">HashMap</span>
+            
+          
+            
+              <span class="tag-box">HashMap Operations</span>
+            
+          
+            
+              <span class="tag-box">Counter</span>
+            
+          
+            
+              <span class="tag-box">DefaultDict</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">HashSet</span>
+            
+          
+            
+              <span class="tag-box">HashSet Operations</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Int to String</span>
+            
+          
+            
+              <span class="tag-box">Reverse Scan</span>
+            
+          
+            
+              <span class="tag-box">Array Sorting</span>
+            
+          
+            
+              <span class="tag-box">Sort Complexity</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Simple Scan</span>
+            
+          
+            
+              <span class="tag-box">2 Pass Scan</span>
+            
+          
+            
+              <span class="tag-box">Intervals</span>
+            
+          
+            
+              <span class="tag-box">Activity Selection</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Binary Search</span>
+            
+          
+            
+              <span class="tag-box">Two Pointers</span>
+            
+          
+            
+              <span class="tag-box">Sliding Window</span>
+            
+          
+            
+              <span class="tag-box">Prefix Sum</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Greedy</span>
+            
+          
+            
+              <span class="tag-box">Backtracking</span>
+            
+          
+            
+              <span class="tag-box">Dynamic Programming</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Min Heap</span>
+            
+          
+            
+              <span class="tag-box">Linked List</span>
+            
+          
+            
+              <span class="tag-box">Binary Trees</span>
+            
+          
+            
+              <span class="tag-box">Graphs</span>
+            </div>
+          
         
-      
+          <h4>Operating Systems</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Operating System</span>
+            
+          
+            
+              <span class="tag-box">Kernel</span>
+            
+          
+            
+              <span class="tag-box">Shell</span>
+            
+          
+            
+              <span class="tag-box">Booting</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Virtual Machines</span>
+            
+          
+            
+              <span class="tag-box">Hypervisor</span>
+            
+          
+            
+              <span class="tag-box">Processes</span>
+            
+          
+            
+              <span class="tag-box">Multiprocessing</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Memory</span>
+            
+          
+            
+              <span class="tag-box">Stack Memory</span>
+            
+          
+            
+              <span class="tag-box">Heap Memory</span>
+            
+          
+            
+              <span class="tag-box">Async Code</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">OS in Cloud</span>
+            
+          
+            
+              <span class="tag-box">Public Cloud</span>
+            
+          
+            
+              <span class="tag-box">Private Cloud</span>
+            
+          
+            
+              <span class="tag-box">Hybrid Cloud</span>
+            </div>
+          
         
-
-          <span class="tag-box">Design Testing</span>
-
+          <h4>Linux</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Linux</span>
+            
+          
+            
+              <span class="tag-box">APT</span>
+            
+          
+            
+              <span class="tag-box">Vim</span>
+            
+          
+            
+              <span class="tag-box">Systemd</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Systemctl</span>
+            
+          
+            
+              <span class="tag-box">Journalctl</span>
+            
+          
+            
+              <span class="tag-box">SSHD</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Filesystem</span>
+            
+          
+            
+              <span class="tag-box">7 File Types</span>
+            
+          
+            
+              <span class="tag-box">Links</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">/bin</span>
+            
+          
+            
+              <span class="tag-box">/tmp</span>
+            
+          
+            
+              <span class="tag-box">/var</span>
+            
+          
+            
+              <span class="tag-box">/etc</span>
+            </div>
+          
         
-      
+          <h4>Containers & Orchestration</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Containers</span>
+            
+          
+            
+              <span class="tag-box">Dockerfile</span>
+            
+          
+            
+              <span class="tag-box">Docker Image</span>
+            
+          
+            
+              <span class="tag-box">Docker Commands</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Docker Compose</span>
+            
+          
+            
+              <span class="tag-box">Docker Network</span>
+            
+          
+            
+              <span class="tag-box">Docker Volumes</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Container Orchestration</span>
+            
+          
+            
+              <span class="tag-box">Microservices</span>
+            
+          
+            
+              <span class="tag-box">Microservices Alternatives</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Kubernetes</span>
+            
+          
+            
+              <span class="tag-box">kubectl</span>
+            
+          
+            
+              <span class="tag-box">Helm</span>
+            
+          
+            
+              <span class="tag-box">K8s Context</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Pods</span>
+            
+          
+            
+              <span class="tag-box">Deployments</span>
+            
+          
+            
+              <span class="tag-box">Services</span>
+            
+          
+            
+              <span class="tag-box">Manifests</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">K8s Architecture</span>
+            
+          
+            
+              <span class="tag-box">Control Plane</span>
+            
+          
+            
+              <span class="tag-box">Controllers</span>
+            
+          
+            
+              <span class="tag-box">Kubelet</span>
+            </div>
+          
         
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Easy Algorithms</span>
-
-        
-      
-        
-
-          <span class="tag-box">Array Algorithms</span>
-
-        
-      
-        
-
-          <span class="tag-box">Tree Algorithms</span>
-
-        
-      
-        
-
-          <span class="tag-box">Complexity</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
-      <h4>Agile & Git</h4>
-
-      
+      <div class="macro-section" id="Python" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Python Language</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Object Oriented</span>
+            
+          
+            
+              <span class="tag-box">Multiparadigm</span>
+            
+          
+            
+              <span class="tag-box">Python Builtins</span>
+            
+          
+            
+              <span class="tag-box">Keywords</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Context Manager</span>
+            
+          
+            
+              <span class="tag-box">UV Package Manager</span>
+            
+          
+            
+              <span class="tag-box">pyproject.toml</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Classes</span>
+            
+          
+            
+              <span class="tag-box">Attributes</span>
+            
+          
+            
+              <span class="tag-box">Methods</span>
+            
+          
+            
+              <span class="tag-box">Arguments</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Typing</span>
+            
+          
+            
+              <span class="tag-box">MyPy</span>
+            
+          
+            
+              <span class="tag-box">Interfaces</span>
+            
+          
+            
+              <span class="tag-box">Protocols</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Lists</span>
+            
+          
+            
+              <span class="tag-box">List Operations</span>
+            
+          
+            
+              <span class="tag-box">Range</span>
+            
+          
+            
+              <span class="tag-box">Tuples</span>
+            </div>
+          
         
-
-          <span class="tag-box">Agile</span>
-
+          <h4>Python Runtime & Packaging</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Execution Steps</span>
+            
+          
+            
+              <span class="tag-box">CPython</span>
+            
+          
+            
+              <span class="tag-box">PyPy</span>
+            
+          
+            
+              <span class="tag-box">PYC Files</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Virtual Environments</span>
+            
+          
+            
+              <span class="tag-box">Site Packages</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Python Packages</span>
+            
+          
+            
+              <span class="tag-box">Binary Distribution</span>
+            
+          
+            
+              <span class="tag-box">Source Distribution</span>
+            
+          
+            
+              <span class="tag-box">C Extensions</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Package Manager UV</span>
+            
+          
+            
+              <span class="tag-box">Build Packages</span>
+            
+          
+            
+              <span class="tag-box">Publish Packages</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Bindings</span>
+            
+          
+            
+              <span class="tag-box">PyO3</span>
+            
+          
+            
+              <span class="tag-box">Python C API</span>
+            
+          
+            
+              <span class="tag-box">Py4J</span>
+            </div>
+          
         
-      
+          <h4>Python Data</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Processing Libraries</span>
+            
+          
+            
+              <span class="tag-box">Polars</span>
+            
+          
+            
+              <span class="tag-box">DataFrame</span>
+            
+          
+            
+              <span class="tag-box">Jupyter Notebook</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Data Science</span>
+            
+          
+            
+              <span class="tag-box">Model Building</span>
+            
+          
+            
+              <span class="tag-box">Regression Models</span>
+            
+          
+            
+              <span class="tag-box">Generative AI</span>
+            </div>
+          
         
-
-          <span class="tag-box">Agile Alternatives</span>
-
-        
-      
-        
-
-          <span class="tag-box">Agile Tools</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Git</span>
-
-        
-      
-        
-
-          <span class="tag-box">Git Tools</span>
-
-        
-      
-        
-
-          <span class="tag-box">GitLab Hosting</span>
-
-        
-      
-        
-
-          <span class="tag-box">GitLab CI</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
-      <h4>Python</h4>
-
-      
+      <div class="macro-section" id="Web_&_Networking" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Networks</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Networks</span>
+            
+          
+            
+              <span class="tag-box">Nodes</span>
+            
+          
+            
+              <span class="tag-box">CDN</span>
+            
+          
+            
+              <span class="tag-box">VPC</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Routers</span>
+            
+          
+            
+              <span class="tag-box">Switch</span>
+            
+          
+            
+              <span class="tag-box">NAT</span>
+            
+          
+            
+              <span class="tag-box">CIDR</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Private Subnet</span>
+            
+          
+            
+              <span class="tag-box">Public Subnet</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Network Security Monitoring</span>
+            
+          
+            
+              <span class="tag-box">Network Segmentation</span>
+            
+          
+            
+              <span class="tag-box">IP Filters</span>
+            
+          
+            
+              <span class="tag-box">Firewalls</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">ACL</span>
+            
+          
+            
+              <span class="tag-box">Network Hacking</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Latency</span>
+            
+          
+            
+              <span class="tag-box">Throughput</span>
+            
+          
+            
+              <span class="tag-box">Bandwidth</span>
+            
+          
+            
+              <span class="tag-box">Connection Time</span>
+            </div>
+          
         
-
-          <span class="tag-box">Python Basics</span>
-
+          <h4>Protocols</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">HTTP & TCP Model</span>
+            
+          
+            
+              <span class="tag-box">Web Clients</span>
+            
+          
+            
+              <span class="tag-box">TCP Model L1 L2</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">TCP Model L3 L4</span>
+            
+          
+            
+              <span class="tag-box">IP / VIP</span>
+            
+          
+            
+              <span class="tag-box">TCP Protocol</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">TCP Model L5 L6 L7</span>
+            
+          
+            
+              <span class="tag-box">HTTP</span>
+            
+          
+            
+              <span class="tag-box">SSL</span>
+            
+          
+            
+              <span class="tag-box">SSH</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Headers</span>
+            
+          
+            
+              <span class="tag-box">Headers SEO</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-      
+          <h4>Web Infrastructure</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Web Server</span>
+            
+          
+            
+              <span class="tag-box">DNS Server</span>
+            
+          
+            
+              <span class="tag-box">Web Stack</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">WSGI</span>
+            
+          
+            
+              <span class="tag-box">ASGI</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Load Balancer</span>
+            
+          
+            
+              <span class="tag-box">Load Balancing Algorithms</span>
+            
+          
+            
+              <span class="tag-box">Reverse Proxy</span>
+            
+          
+            
+              <span class="tag-box">Forward Proxy</span>
+            </div>
+          
         
-
-          <span class="tag-box">Python Execution</span>
-
+          <h4>Backend & API</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Backend</span>
+            
+          
+            
+              <span class="tag-box">Django</span>
+            
+          
+            
+              <span class="tag-box">Django Admin</span>
+            
+          
+            
+              <span class="tag-box">Backend Security</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Cache</span>
+            
+          
+            
+              <span class="tag-box">Cookies</span>
+            
+          
+            
+              <span class="tag-box">Translations</span>
+            
+          
+            
+              <span class="tag-box">Database Queries</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">OpenAPI</span>
+            
+          
+            
+              <span class="tag-box">REST</span>
+            
+          
+            
+              <span class="tag-box">GraphQL</span>
+            
+          
+            
+              <span class="tag-box">API Alternatives</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">FastAPI</span>
+            
+          
+            
+              <span class="tag-box">Layers</span>
+            
+          
+            
+              <span class="tag-box">Dependencies</span>
+            
+          
+            
+              <span class="tag-box">Middleware</span>
+            </div>
+          
         
-      
+          <h4>Auth & Authorization</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Basic Auth</span>
+            
+          
+            
+              <span class="tag-box">API Key</span>
+            
+          
+            
+              <span class="tag-box">JWT</span>
+            
+          
+            
+              <span class="tag-box">JWT Architecture</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">JWT Hash Methods</span>
+            
+          
+            
+              <span class="tag-box">HMAC / RSA</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">OAuth2</span>
+            
+          
+            
+              <span class="tag-box">OAuth2 Steps</span>
+            
+          
+            
+              <span class="tag-box">OIDC</span>
+            
+          
+            
+              <span class="tag-box">OIDC Steps</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">SSO</span>
+            
+          
+            
+              <span class="tag-box">Okta SSO</span>
+            
+          
+            
+              <span class="tag-box">LDAP</span>
+            
+          
+            
+              <span class="tag-box">Biometric Auth</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Authorization</span>
+            
+          
+            
+              <span class="tag-box">Privilege Escalation</span>
+            
+          
+            
+              <span class="tag-box">JWT Authorization</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">RBAC</span>
+            
+          
+            
+              <span class="tag-box">ABAC</span>
+            
+          
+            
+              <span class="tag-box">Policy Based</span>
+            
+          
+            
+              <span class="tag-box">DAC</span>
+            </div>
+          
         
-
-          <span class="tag-box">Python Classes</span>
-
-        
-      
-        
-
-          <span class="tag-box">Python Data Structures</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Python UV</span>
-
-        
-      
-        
-
-          <span class="tag-box">Python Build</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-        
-        <div class="tag-row">
-        
-
-          <span class="tag-box">Python Data Processing</span>
-
-        
-      
-        
-
-          <span class="tag-box">Polars Library</span>
-
-        
-      
-        
-
-          <span class="tag-box">Data Science</span>
-
-        
-      
-        
-
-          <span class="tag-box">Generative AI</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
-      <h4>Linux</h4>
-
-      
+      <div class="macro-section" id="Dev_Practices" style="display:none; margin-top:10px;">
         
-        <div class="tag-row">
+          <h4>Git</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Git</span>
+            
+          
+            
+              <span class="tag-box">Git Work Tree</span>
+            
+          
+            
+              <span class="tag-box">Git Tools</span>
+            
+          
+            
+              <span class="tag-box">Git Flow</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Git Logs</span>
+            
+          
+            
+              <span class="tag-box">Staging Area</span>
+            
+          
+            
+              <span class="tag-box">History</span>
+            
+          
+            
+              <span class="tag-box">Remotes</span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">Git Refs</span>
+            
+          
+            
+              <span class="tag-box">Git 4 Objects</span>
+            
+          
+            
+              <span class="tag-box">Commits / Tags / Trees / Blobs</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
         
-
-          <span class="tag-box">Linux</span>
-
+          <h4>Agile</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">Agile</span>
+            
+          
+            
+              <span class="tag-box">Agile Frameworks</span>
+            
+          
+            
+              <span class="tag-box">Agile Alternatives</span>
+            
+          
+            
+              <span class="tag-box">Agile Tools</span>
+            </div>
+          
         
-      
+          <h4>GitLab</h4>
+          
+            <div class="tag-row">
+              <span class="tag-box">GitLab Hosting</span>
+            
+          
+            
+              <span class="tag-box">GitLab API</span>
+            
+          
+            
+              <span class="tag-box">GitLab Permissions</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">SSH Auth</span>
+            
+          
+            
+              <span class="tag-box">PAT Tokens</span>
+            
+          
+            
+              <span class="tag-box"></span>
+            
+          
+            
+              <span class="tag-box"></span>
+            </div>
+          
+            <div class="tag-row">
+              <span class="tag-box">GitLab CI</span>
+            
+          
+            
+              <span class="tag-box">Service Tags</span>
+            
+          
+            
+              <span class="tag-box">Service Renewal</span>
+            
+          
+            
+              <span class="tag-box">Private Registry</span>
+            </div>
+          
         
-
-          <span class="tag-box">Linux Daemons</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-      
-        
-
-          <span class="tag-box">--</span>
-
-        
-        </div>
-        
-      
-
+      </div>
     
 
   </div>
 </div>
+
+<script>
+function showMacro(id) {
+  const sections = document.querySelectorAll('.macro-section');
+  sections.forEach(s => s.style.display = 'none');       // nascondi tutte
+  const active = document.getElementById(id);
+  if(active) active.style.display = 'block';             // mostra quella cliccata
+}
+</script>
 
 
   <!-- Education -->

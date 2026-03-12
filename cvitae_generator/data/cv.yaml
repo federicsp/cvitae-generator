@@ -1,6 +1,5 @@
 person:
   name: "Federico Spatola"
-  tagline: "Born in Palermo, moved to Trieste for higher education. Nowadays one of the things I like the most is to spend my time (both at work and for fun) developing Python applications and managing data"
   photo: "../assets/images/picture.jpg"
   location: "Palermo, Italy"
   linkedin: "https://it.linkedin.com/in/federico-spatola"
@@ -25,142 +24,763 @@ work:
     summary: "Created web-scraping scripts in Python to extract data from various sources."
 
 tags:
+
   "Data Engineering":
-    - "Data Pipeline"
-    - "Data Transformation"
-    - "Data Source & Serving"
-    - "--"
 
-    - "Data Governance"
-    - "Data Governance Tools"
-    - "Data Platform Governance"
-    - "Operational vs Analytics"
+    "Pipelines & Transformation":
+      - "Data Pipeline"
+      - "Data Ingestion"
+      - "Data Source & Serving"
+      - ""
 
-    - "Data Platform"
-    - "Platform Examples"
-    - "Spark Cloud"
-    - "--"
+      - "Pipeline Transformation"
+      - "Data Modeling"
+      - "Pydantic"
+      - "Data Enrichment"
 
-    - "Distributed Computing"
-    - "Spark Architecture"
-    - "Apache Spark"
-    - "Spark Extensions"
+    "Distributed Compute":
+      - "Distributed Computing"
+      - "Distributed In Memory"
+      - "Distributed Streaming"
+      - ""
 
-    - "ELT"
-    - "DBT"
-    - "Brokers Messages"
-    - "--"
+      - "Spark In Memory"
+      - "Spark Dependencies"
+      - "Spark Deployment"
+      - "Spark Execution"
 
-    - "Workflows"
-    - "Airflow"
-    - "Airflow Architecture"
-    - "--"
+      - "Spark Architecture"
+      - "Spark Cluster"
+      - "Spark Config"
+      - "Catalyst Optimizer"
 
-    - "Data Storage"
-    - "Data Storage Abstraction"
-    - "Storage Objects"
-    - "In-Memory Storage"
+      - "Spark Connect"
+      - "Spark RPC"
+      - "Spark Libraries"
+      - "Structured APIs"
 
-    - "Table Format"
-    - "File Table Properties"
-    - "Iceberg"
-    - "Iceberg Architecture"
+      - "Partitioning"
+      - "Partition By"
+      - "Shuffle"
+      - "Partition Skew"
 
-    - "Database"
-    - "Database Specialized"
-    - "DB Optimization"
-    - "DB Transaction"
+      - "Salting"
+      - "Broadcast Join"
+      - "Map Side Aggregation"
+      - "Dynamic Allocation"
 
-    - "SQL Constructs"
-    - "SQL Clauses"
-    - "SQL Functions"
-    - "SQL Operators & Wildcards"
+      - "RDD"
+      - "RDD Operations"
+      - "RDD Transformations"
+      - ""
+
+      - "DataFrame"
+      - "DataFrame Operations"
+      - "Spark SQL"
+      - "Spark JDBC"
+
+      - "Iceberg + Spark Sessions"
+      - "Iceberg DDL with Spark"
+      - "Iceberg Procedures"
+      - "Iceberg Snapshots DQL"
+
+      - "Iceberg Branch"
+      - "Iceberg Tag"
+      - ""
+      - ""
+
+    "Data Libraries":
+      - "Data Processing Libraries"
+      - "Polars"
+      - "DataFrame"
+      - "Jupyter Notebook"
+
+      - "Data Science"
+      - "Model Building"
+      - "Regression Models"
+      - "Generative AI"
+
+    "Brokers":
+      - "Message Broker"
+      - "Pub Sub Model"
+      - "Event Driven Design"
+      - "Dead Lettering"
+
+      - "RabbitMQ"
+      - "Exchange"
+      - "Queue"
+      - "Pika"
+
+      - "Kafka"
+      - "Kafka Events"
+      - "Kafka Topics"
+      - "Kafka Topic List"
+
+      - "Kafka Architecture"
+      - "Kafka Connect"
+      - "Kafka Streams API"
+      - ""
+
+    "Workflows":
+      - "Workflows"
+      - "Workflow States"
+      - "Workflow Infrastructure"
+      - ""
+
+      - "Airflow"
+      - "Airflow Architecture"
+      - "Scheduler"
+      - "Metadata DB"
+
+      - "Connections"
+      - "Variables"
+      - "DAGs"
+      - "TaskFlow API"
+
+      - "Sensors"
+      - "Assets"
+      - "Operators"
+      - "SSH Operator"
+
+    "ELT Tools":
+      - "ELT Tools"
+      - "Materialization Types"
+      - "SQLMesh"
+      - "DBT"
+
+      - "DBT YAML Files"
+      - "DBT Run"
+      - "DBT Snapshot"
+      - "DBT Models"
+
+      - "DBT Macros"
+      - "DBT Project Structure"
+      - ""
+      - ""
+
+    "Governance & Quality":
+      - "Data Governance"
+      - "Compliance"
+      - "Privacy"
+      - "Data Contracts"
+
+      - "Data Profiling"
+      - "Data Lineage"
+      - "OpenLineage"
+      - ""
+
+      - "Data Quality"
+      - "Quality Checks"
+      - "Validation Rules"
+      - ""
+
+      - "Great Expectations"
+      - "Expectations"
+      - "Validation Results"
+      - "Data Docs"
+
+      - "DBT Tests"
+      - "DBT Test Command"
+      - "DBT Target Folder"
+      - ""
+
+    "Catalog & Metadata":
+      - "Catalog"
+      - "OpenMetadata"
+      - "Data Discovery"
+      - "DataHub"
+
+      - "DataHub Architecture"
+      - "GMS"
+      - "Metadata Graph"
+      - "GraphQL API"
+
+      - "Entities"
+      - "Assets"
+      - "Aspects"
+      - "Relationships"
+
+      - "Domains"
+      - "Tags"
+      - "Structured Properties"
+      - "Sources"
+
+      - "Lineage"
+      - "Incidents"
+      - "Contracts"
+      - "Assertions"
+
+      - "URN"
+      - "URN User"
+      - "URN Columns"
+      - "MCP DataHub"
+
+    "Data Platform":
+      - "Data Platform"
+      - "Data Warehouse"
+      - "Data Lake"
+      - "Data Lakehouse"
+
+      - "Data Mesh"
+      - "Domain Ownership"
+      - "Self Serve Data Platform"
+      - "Federated Governance"
+
+    "Google Cloud":
+      - "Google Cloud"
+      - "Projects"
+      - "Regions"
+      - "Locations"
+
+      - "IAM"
+      - "OAuth2"
+      - "Service Accounts"
+      - "Workload Identity Federation"
+
+      - "Scopes"
+      - "Roles"
+      - "gcloud CLI"
+      - "Cloud Storage"
+
+      - "BigQuery"
+      - "Analytics Hub"
+      - "External Tables"
+      - "Federated Queries"
+
+      - "BigLake"
+      - "BigLake Storage"
+      - "BigLake API"
+      - "BigLake Limitations"
+
+      - "Dataproc"
+      - "Dataproc Cluster"
+      - "Dataproc Serverless"
+      - "Databricks"
+
+  "Storage":
+
+    "Storage Systems":
+      - "Storage"
+      - "Compression"
+      - "Partitioning"
+      - "In Memory Storage"
+
+      - "Storage Abstraction"
+      - "Block Storage"
+      - "File Storage"
+      - "Object Storage"
+
+      - "Distributed Storage"
+      - "CAP Theorem"
+      - "Backups"
+      - "Medallion Architecture"
+
+    "Table Formats":
+      - "Table Formats"
+      - "Table Properties"
+      - "Apache Iceberg"
+      - "Iceberg Architecture"
+
+      - "Iceberg Versions"
+      - "Compaction"
+      - "Schema Evolution"
+      - "Delete / Update"
+
+      - "Iceberg Catalog"
+      - "Catalog Engines"
+      - "Migration"
+      - "PyIceberg"
+
+    "Databases":
+      - "Database"
+      - "CRUD"
+      - "MySQL"
+      - "MySQL Architecture"
+
+      - "MongoDB"
+      - "MongoDB Architecture"
+      - "ClickHouse"
+      - "DuckDB"
+
+      - "Spatial Databases"
+      - "Vector Databases"
+      - ""
+      - ""
+
+      - "Connection Pool"
+      - "ORM"
+      - "ACID Transactions"
+      - "DB Oplog"
+
+      - "Query Plan"
+      - "Schema Optimization"
+      - "Index Optimization"
+      - "Views"
+
+      - "Stored Procedures"
+      - "Triggers"
+      - "Events"
+      - ""
+
+    "SQL":
+      - "SQL DQL"
+      - "DML"
+      - "DISTINCT"
+      - "EXISTS"
+
+      - "UNION"
+      - "GROUP BY"
+      - "HAVING"
+      - "ORDER BY"
+
+      - "Subqueries"
+      - "Correlated Subqueries"
+      - "Subquery in HAVING"
+      - "CTE"
+
+      - "SQL Join"
+      - "Left Join"
+      - "Multiple Join"
+      - "Join Between"
+
+      - "CASE"
+      - "COALESCE"
+      - "Window Functions"
+      - "Row Number"
+
+      - "Dense Rank"
+      - "Lag Lead"
+      - ""
+      - ""
+
+      - "SUBSTR"
+      - "LENGTH"
+      - "GROUP CONCAT"
+      - "LIKE / REGEX"
+
+      - "ROUND"
+      - "ARRAY AGG"
+      - "ANY / ALL"
+      - "CONCAT"
+
+      - "TO_CHAR"
+      - "YEAR"
+      - "DATEDIFF"
+      - "NOW"
+
+    "MQL":
+      - "MQL"
+      - "MQL DML"
+      - "Aggregation"
+      - ""
+
+      - "Stage Match"
+      - "Stage Project"
+      - ""
+      - ""
+
+    "DDL":
+      - "DDL"
+      - "DB Diagrams"
+      - "Normal Forms"
+      - "Netflix Schema Examples"
+
+    "Search Engines":
+      - "Indexing Engines"
+      - "OpenSearch"
+      - "Search Indices"
+      - "REST APIs"
+
+      - "Search UI"
+      - ""
+      - ""
+      - ""
 
   "Software":
-    - "Software"
-    - "Encoding"
-    - "Encryption / Hash"
-    - "Data Structures"
 
-    - "Hardware Elements"
-    - "Hardware Configuration"
-    - "Hardware Provisioning"
-    - "Observability"
+    "Software Basics":
+      - "Software Types"
+      - "Encoding"
+      - "Encryption"
+      - "Hashing"
 
-    - "Processes"
-    - "Multiprocessing"
-    - "Memory"
-    - "Async Code"
+      - "Environment Variables"
+      - "Binary Representation"
+      - "Tokens"
+      - ""
 
-    - "Operating System"
-    - "OS in Cloud"
-    - "Containers"
-    - "Container Orchestration"
+    "Hardware & Infra":
+      - "Hardware Elements"
+      - "CPU"
+      - "RAM"
+      - "HDD"
 
-  "Web & Networking":
-    - "Networks"
-    - "VPC"
-    - "Network Security"
-    - "--"
+      - "Provisioning"
+      - "Terraform"
+      - "Terraform Modules"
+      - "Terraform State"
 
-    - "HTTP & Web"
-    - "TCP-IP Model: levels 5,6,7"
-    - "TCP-IP Model: levels 3,4"
-    - "TCP-IP Model: levels 1,2"
+      - "Infrastructure as Code"
+      - "Cloud IaaS"
+      - ""
+      - ""
 
-    - "Web Server"
-    - "Web Proxies"
-    - "Web DNS Server"
-    - "Web Stack"
+      - "Observability"
+      - "Observability Driven Design"
+      - "Zabbix"
+      - ""
 
-    - "Backend"
-    - "Backend Elements"
-    - "Web API"
-    - "--"
+    "Software Design":
+      - "Design"
+      - "Disaster Recovery"
+      - "Layered Architecture"
+      - "Testing"
 
-  "Software Design":
-    - "Design"
-    - "Design Disaster Recovery"
-    - "Design Testing"
-    - "--"
+      - "Pytest"
+      - "Fixtures"
+      - "Plugins"
+      - ""
 
-    - "Easy Algorithms"
-    - "Array Algorithms"
-    - "Tree Algorithms"
-    - "Complexity"
+    "Data Structures & Algorithms":
+      - "Data Structures"
+      - "Stack"
+      - "Queue"
+      - ""
 
-  "Agile & Git":
-    - "Agile"
-    - "Agile Alternatives"
-    - "Agile Tools"
-    - "--"
+      - "HashMap"
+      - "HashMap Operations"
+      - "Counter"
+      - "DefaultDict"
 
-    - "Git"
-    - "Git Tools"
-    - "GitLab Hosting"
-    - "GitLab CI"
+      - "HashSet"
+      - "HashSet Operations"
+      - ""
+      - ""
+
+      - "Int to String"
+      - "Reverse Scan"
+      - "Array Sorting"
+      - "Sort Complexity"
+
+      - "Simple Scan"
+      - "2 Pass Scan"
+      - "Intervals"
+      - "Activity Selection"
+
+      - "Binary Search"
+      - "Two Pointers"
+      - "Sliding Window"
+      - "Prefix Sum"
+
+      - "Greedy"
+      - "Backtracking"
+      - "Dynamic Programming"
+      - ""
+
+      - "Min Heap"
+      - "Linked List"
+      - "Binary Trees"
+      - "Graphs"
+
+    "Operating Systems":
+      - "Operating System"
+      - "Kernel"
+      - "Shell"
+      - "Booting"
+
+      - "Virtual Machines"
+      - "Hypervisor"
+      - "Processes"
+      - "Multiprocessing"
+
+      - "Memory"
+      - "Stack Memory"
+      - "Heap Memory"
+      - "Async Code"
+
+      - "OS in Cloud"
+      - "Public Cloud"
+      - "Private Cloud"
+      - "Hybrid Cloud"
+
+    "Linux":
+      - "Linux"
+      - "APT"
+      - "Vim"
+      - "Systemd"
+
+      - "Systemctl"
+      - "Journalctl"
+      - "SSHD"
+      - ""
+
+      - "Filesystem"
+      - "7 File Types"
+      - "Links"
+      - ""
+
+      - "/bin"
+      - "/tmp"
+      - "/var"
+      - "/etc"
+
+    "Containers & Orchestration":
+      - "Containers"
+      - "Dockerfile"
+      - "Docker Image"
+      - "Docker Commands"
+
+      - "Docker Compose"
+      - "Docker Network"
+      - "Docker Volumes"
+      - ""
+
+      - "Container Orchestration"
+      - "Microservices"
+      - "Microservices Alternatives"
+      - ""
+
+      - "Kubernetes"
+      - "kubectl"
+      - "Helm"
+      - "K8s Context"
+
+      - "Pods"
+      - "Deployments"
+      - "Services"
+      - "Manifests"
+
+      - "K8s Architecture"
+      - "Control Plane"
+      - "Controllers"
+      - "Kubelet"
 
   "Python":
-    - "Python Basics"
-    - "Python Execution"
-    - "Python Classes"
-    - "Python Data Structures"
 
-    - "Python UV"
-    - "Python Build"
-    - "--"
-    - "--"
+    "Python Language":
+      - "Object Oriented"
+      - "Multiparadigm"
+      - "Python Builtins"
+      - "Keywords"
 
-    - "Python Data Processing"
-    - "Polars Library"
-    - "Data Science"
-    - "Generative AI"
+      - "Context Manager"
+      - "UV Package Manager"
+      - "pyproject.toml"
+      - ""
 
-  "Linux":
-    - "Linux"
-    - "Linux Daemons"
-    - "--"
-    - "--"
+      - "Classes"
+      - "Attributes"
+      - "Methods"
+      - "Arguments"
+
+      - "Typing"
+      - "MyPy"
+      - "Interfaces"
+      - "Protocols"
+
+      - "Lists"
+      - "List Operations"
+      - "Range"
+      - "Tuples"
+
+    "Python Runtime & Packaging":
+      - "Execution Steps"
+      - "CPython"
+      - "PyPy"
+      - "PYC Files"
+
+      - "Virtual Environments"
+      - "Site Packages"
+      - ""
+      - ""
+
+      - "Python Packages"
+      - "Binary Distribution"
+      - "Source Distribution"
+      - "C Extensions"
+
+      - "Package Manager UV"
+      - "Build Packages"
+      - "Publish Packages"
+      - ""
+
+      - "Bindings"
+      - "PyO3"
+      - "Python C API"
+      - "Py4J"
+
+    "Python Data":
+      - "Data Processing Libraries"
+      - "Polars"
+      - "DataFrame"
+      - "Jupyter Notebook"
+
+      - "Data Science"
+      - "Model Building"
+      - "Regression Models"
+      - "Generative AI"
+
+  "Web & Networking":
+
+    "Networks":
+      - "Networks"
+      - "Nodes"
+      - "CDN"
+      - "VPC"
+
+      - "Routers"
+      - "Switch"
+      - "NAT"
+      - "CIDR"
+
+      - "Private Subnet"
+      - "Public Subnet"
+      - ""
+      - ""
+
+      - "Network Security Monitoring"
+      - "Network Segmentation"
+      - "IP Filters"
+      - "Firewalls"
+
+      - "ACL"
+      - "Network Hacking"
+      - ""
+      - ""
+
+      - "Latency"
+      - "Throughput"
+      - "Bandwidth"
+      - "Connection Time"
+
+    "Protocols":
+      - "HTTP & TCP Model"
+      - "Web Clients"
+      - "TCP Model L1 L2"
+      - ""
+
+      - "TCP Model L3 L4"
+      - "IP / VIP"
+      - "TCP Protocol"
+      - ""
+
+      - "TCP Model L5 L6 L7"
+      - "HTTP"
+      - "SSL"
+      - "SSH"
+
+      - "Headers"
+      - "Headers SEO"
+      - ""
+      - ""
+
+    "Web Infrastructure":
+      - "Web Server"
+      - "DNS Server"
+      - "Web Stack"
+      - ""
+
+      - "WSGI"
+      - "ASGI"
+      - ""
+      - ""
+
+      - "Load Balancer"
+      - "Load Balancing Algorithms"
+      - "Reverse Proxy"
+      - "Forward Proxy"
+
+    "Backend & API":
+      - "Backend"
+      - "Django"
+      - "Django Admin"
+      - "Backend Security"
+
+      - "Cache"
+      - "Cookies"
+      - "Translations"
+      - "Database Queries"
+
+      - "OpenAPI"
+      - "REST"
+      - "GraphQL"
+      - "API Alternatives"
+
+      - "FastAPI"
+      - "Layers"
+      - "Dependencies"
+      - "Middleware"
+
+    "Auth & Authorization":
+      - "Basic Auth"
+      - "API Key"
+      - "JWT"
+      - "JWT Architecture"
+
+      - "JWT Hash Methods"
+      - "HMAC / RSA"
+      - ""
+      - ""
+
+      - "OAuth2"
+      - "OAuth2 Steps"
+      - "OIDC"
+      - "OIDC Steps"
+
+      - "SSO"
+      - "Okta SSO"
+      - "LDAP"
+      - "Biometric Auth"
+
+      - "Authorization"
+      - "Privilege Escalation"
+      - "JWT Authorization"
+      - ""
+
+      - "RBAC"
+      - "ABAC"
+      - "Policy Based"
+      - "DAC"
+
+  "Dev Practices":
+
+    "Git":
+      - "Git"
+      - "Git Work Tree"
+      - "Git Tools"
+      - "Git Flow"
+
+      - "Git Logs"
+      - "Staging Area"
+      - "History"
+      - "Remotes"
+
+      - "Git Refs"
+      - "Git 4 Objects"
+      - "Commits / Tags / Trees / Blobs"
+      - ""
+
+    "Agile":
+      - "Agile"
+      - "Agile Frameworks"
+      - "Agile Alternatives"
+      - "Agile Tools"
+
+    "GitLab":
+      - "GitLab Hosting"
+      - "GitLab API"
+      - "GitLab Permissions"
+      - ""
+
+      - "SSH Auth"
+      - "PAT Tokens"
+      - ""
+      - ""
+
+      - "GitLab CI"
+      - "Service Tags"
+      - "Service Renewal"
+      - "Private Registry"
 
 
 education:
